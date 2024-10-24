@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .logo {
+      width: 180px; /* Ajuste o valor conforme necessário */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Estilos para os botões */
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #f04a47;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: hsl(0, 76%, 71%);
+    }
+
+    .home-button {
+      background-color: #f04a47;
+    }
+
+    .home-button:hover {
+      background-color: hsl(0, 76%, 71%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <div class="form-container">
+      <form class="form" id="login-form">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="Digite seu email" required>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Senha</label>
+          <input type="password" id="login-password" placeholder="Digite sua senha" required>
+        </div>
+        <button type="button" onclick="window.location.href='TelaInformações.html'">Entrar</button>
+        <button type="button" class="home-button" onclick="window.location.href='index.html'">Home</button>
+        <p>Não tem uma conta? <a href="register.html">Cadastrar</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

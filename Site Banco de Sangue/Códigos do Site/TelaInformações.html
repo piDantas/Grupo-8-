@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Status</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('assets/FundoVermelho.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: white;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .logo {
+            width: 300px; /* Ajuste o tamanho da logo conforme necessário */
+        }
+
+        .home-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background-color: #f44d3a; /* Cor de fundo do botão */
+            border: none;
+            border-radius: 8px; /* Bordas mais arredondadas */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+
+        .home-button:hover {
+            background-color: #eb7e7e; /* Cor ao passar o mouse */
+            transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+        }
+
+        .home-button:focus {
+            outline: none; /* Remove o contorno padrão */
+            box-shadow: 0 0 0 2px rgba(244, 77, 58, 0.5); /* Sombra ao focar */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <h1>Em andamento</h1>
+        <button type="button" class="home-button" onclick="window.location.href='index.html'">Home</button> <!-- Botão com redirecionamento -->
+    </div>
+</body>
+</html>
